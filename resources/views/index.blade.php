@@ -16,4 +16,5 @@
         <x-side_bar/>
         <x-main_page/>
     </body>
+    
 </html>
