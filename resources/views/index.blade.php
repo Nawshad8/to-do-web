@@ -59,6 +59,13 @@
         ul li {
             margin-bottom: 5px;
             display: flex;
+            transition: 0.5s;
+        }
+
+        ul li:hover {
+            background-color: black;
+            padding-left: 10px;
+            transition: 0.5s;
         }
 
         ul li img {
