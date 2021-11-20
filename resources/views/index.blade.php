@@ -31,6 +31,7 @@
             flex-grow: 0.2;
             background-color: #0A0F38;
             margin-left: 30px;
+            padding-right: 30px;
         }
 
         .logo {
@@ -102,6 +103,7 @@
         .main-page {
             flex-grow: 3;
             background-color: #050A2E;
+            padding-left: 25px;
         }
 
 /*--------------------------------------------------*/
