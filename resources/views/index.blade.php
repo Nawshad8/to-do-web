@@ -26,7 +26,7 @@
 
         }
 
-        /*---------------SIDE-BAR*/
+/*------SIDE BAR--------------------------------------------*/
         .side-bar {
             flex-grow: 0.2;
             background-color: #0A0F38;
@@ -76,10 +76,10 @@
             margin: auto 10px auto 0;
         }
 
-        p span {
+        p span { /* PRO */
             color: orange;
             font-weight: bold;
-            margin-left: 60px;
+            margin-left: 0px;
         }
 
         .profile {
@@ -98,14 +98,14 @@
             margin-left: 40px;
         }
 
-
-        /*---------------MAIN-PAGE*/
+/*------MAIN-PAGE-------------------------------------------*/
         .main-page {
             flex-grow: 3;
             background-color: #050A2E;
             padding-left: 25px;
         }
 
+        /* Start customisation for icon next to list title */
         .circle-container {
             height: 35px;
             width: 35px;
@@ -127,10 +127,7 @@
             font-weight: 500;
         }
 
-
-        /*--------------------------------------------------*/
-
-
+        /* Start customisation for checkbox */
         /* Customize the label (the container) */
         .container-checkbox {
             display: block;
@@ -152,10 +149,7 @@
         }
 
         .container-checkbox img {
-            position: absolute;
-            color: red;
             background-color: green;
-
         }
 
         .container-checkbox span p {
@@ -180,7 +174,6 @@
             height: 16px;
             width: 16px;
             background-color: #050A2E; /* #050A2E; */
-
             border: 2px solid #ccc;
             border-radius: 70%;
         }
@@ -195,7 +188,6 @@
 
         label:hover {
             background-color: rgb(99, 29, 62, 0.5);
-
             transition: 0.5s;
         }
 
@@ -226,12 +218,20 @@
             width: 4px;
             height: 8px;
             border: solid white;
-            border-width: 0 1.5px 1.5px 0;
+            border-width: 0 2.5px 2.5px 0;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
         }
 
+        .delay-p {
+
+        }
+
+        .delay-span {
+            padding-left: 3.22px;
+            color: #AD294B;
+        }
 
     </style>
 </head>
@@ -271,7 +271,8 @@
     <div class="main-page">
 
         <div class="circle-container">
-            <img class="circle" src="https://img.icons8.com/material-outlined/24/000000/suitcase.png"/>
+            {{-- SUITCASE LINK : https://img.icons8.com/material-outlined/24/000000/suitcase.png --}}
+            <img class="circle" src="https://img.icons8.com/material/24/000000/construction-worker--v1.png"/>
             <p>Work</p>
         </div>
 
@@ -287,14 +288,16 @@
             <div>
                 <h2>Tomorrow</h2>
                 <label class="container-checkbox">
-                    <p>Get the documents from home
-                        <span>
-                     <img
-                         src="https://img.icons8.com/material/24/AD294B/tear-off-calendar.png">
-                    <p>yesterday at
-                        12:00</p>
-                    </span>
+                    <p class="delay-p">
+                        Get the documents from home
+                        <span class="delay-span">
+                            <img src="https://img.icons8.com/material/24/AD294B/read--v2.png">
+                            yesterday at 12:00
+                        </span> 
                     </p>
+                    
+
+                    
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
