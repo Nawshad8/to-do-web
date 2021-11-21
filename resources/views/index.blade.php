@@ -18,7 +18,7 @@
             margin-top: 20px;
         }
 
-        .container-side {
+        .container {
             display: flex;
             max-width: 90%;
             margin-left: auto;
@@ -106,17 +106,37 @@
             padding-left: 25px;
         }
 
-/*--------------------------------------------------*/
+        .circle-container {
+            height: 35px;
+            width: 35px;
+            background-color: white;
+            border-radius: 50%;
+            margin-top: 20px;
+            display: flex;
+        }
+
+        .circle-container img {
+            margin: auto;
+            padding-left: 5px;
+        }
+
+        .circle-container p {
+            padding-left: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-weight: 500;
+        }
+
+
+        /*--------------------------------------------------*/
 
 
         /* Customize the label (the container) */
         .container-checkbox {
             display: block;
             position: relative;
-            padding-left: 35px;
+            padding-left: 27px;
             margin-bottom: 12px;
-
-
 
             cursor: pointer;
             font-size: 22px;
@@ -124,6 +144,11 @@
             -moz-user-select: none;
             -ms-user-select: none;
             user-select: none;
+        }
+
+        .container-checkbox p {
+            font-size: 16px;
+
         }
 
         /* Hide the browser's default checkbox */
@@ -140,8 +165,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 25px;
-            width: 25px;
+            height: 16px;
+            width: 16px;
             background-color: #050A2E; /* #050A2E; */
 
             border: 2px solid #ccc;
@@ -151,25 +176,27 @@
 
         /* On mouse-over, add a background color */
         .container-checkbox:hover input ~ .checkmark {
-            background-color: #631d3e;
+            background-color: rgb(99, 29, 62, 0.5);
             transition: 0.5s;
         }
 
 
         label:hover {
-            background-color: #631d3e;
+            background-color: rgb(99, 29, 62, 0.5);
+
             transition: 0.5s;
         }
 
 
         /* When the checkbox is checked, add a green background */
         .container-checkbox input:checked ~ .checkmark {
-            background-color: #7FFF00;
+            background-color: #00B400;
+            border-color: #00B400;
         }
 
 
         /* Create the checkmark/indicator (hidden when not checked) */
-            .checkmark:after {
+        .checkmark:after {
             content: "";
             position: absolute;
             display: none;
@@ -177,29 +204,29 @@
 
         /* Show the checkmark when checked */
         .container-checkbox input:checked ~ .checkmark:after {
-            ;
+            display: block;
         }
 
         /* Style the checkmark/indicator */
         .container-checkbox .checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
+            left: 5px;
+            top: 2px;
+            width: 4px;
+            height: 8px;
             border: solid white;
-            border-width: 0 3px 3px 0;
+            border-width: 0 1.5px 1.5px 0;
             -webkit-transform: rotate(45deg);
             -ms-transform: rotate(45deg);
             transform: rotate(45deg);
         }
 
 
-
     </style>
 </head>
 
 <body>
-<div class="container-side">
+<div class="container">
+
     <div class="side-bar">
         <div class="logo">
             <img src="https://img.icons8.com/material/24/000000/mysql-logo.png"/>
@@ -231,48 +258,38 @@
     </div>
     <div class="main-page">
 
-                <img class="circle" src="https://img.icons8.com/material-outlined/24/000000/suitcase.png"/>
-                <h1>Work</h1>
-    
-                <div>
+        <div class="circle-container">
+            <img class="circle" src="https://img.icons8.com/material-outlined/24/000000/suitcase.png"/>
+            <p>Work</p>
+        </div>
 
-                    <h2>Today</h2>
+        <div>
+            <h2>Today</h2>
 
-                    <label class="container-checkbox"> Pay internet
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
+            <label class="container-checkbox">
+                <p>Pay internet</p>
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
 
-                    <label class="container-checkbox"> Get the documents from home
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-                        
-                    <label class="container-checkbox"> Charge my watch
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                    </label>
-    
-                    https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+            <div>
+                <h2>Tomorrow</h2>
+                <label class="container-checkbox">
+                    <p>Get the documents from home</p>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
 
-                <div>
-                    <h2>Tomorrow</h2>
-                    <div class="round">
-                        <input type="checkbox"  id="checkbox4" />
-                        <label for="checkbox4">Reelase cr.fetbiko.ru</label>
-                    </div>
+            <div>
+                <h2>Next Week</h2>
+                <div class="round">
+                    <input type="checkbox" id="checkbox5"/>
+                    <label for="checkbox5">Release todo app</label>
                 </div>
-    
-
-                <div>
-                    <h2>Next Week</h2>  
-                    <div class="round">
-                        <input type="checkbox"  id="checkbox5" />
-                        <label for="checkbox5">Release todo app</label>
-                    </div>
-                </div>
+            </div>
+        </div>
     </div>
-</div>
 
 </body>
 </html>
