@@ -115,6 +115,9 @@
             position: relative;
             padding-left: 35px;
             margin-bottom: 12px;
+
+
+
             cursor: pointer;
             font-size: 22px;
             -webkit-user-select: none;
@@ -139,18 +142,31 @@
             left: 0;
             height: 25px;
             width: 25px;
-            background-color: #eee;
+            background-color: #050A2E; /* #050A2E; */
+
+            border: 2px solid #ccc;
+            border-radius: 70%;
         }
 
-        /* On mouse-over, add a grey background color */
+
+        /* On mouse-over, add a background color */
         .container-checkbox:hover input ~ .checkmark {
-            background-color: #ccc;
+            background-color: #631d3e;
+            transition: 0.5s;
         }
+
+
+        label:hover {
+            background-color: #631d3e;
+            transition: 0.5s;
+        }
+
 
         /* When the checkbox is checked, add a green background */
         .container-checkbox input:checked ~ .checkmark {
             background-color: #7FFF00;
         }
+
 
         /* Create the checkmark/indicator (hidden when not checked) */
             .checkmark:after {
