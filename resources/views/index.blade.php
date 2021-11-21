@@ -151,6 +151,18 @@
 
         }
 
+        .container-checkbox img {
+            position: absolute;
+            color: red;
+            background-color: green;
+
+        }
+
+        .container-checkbox span p {
+            margin-left: 20px;
+        }
+
+
         /* Hide the browser's default checkbox */
         .container-checkbox input {
             position: absolute;
@@ -275,7 +287,14 @@
             <div>
                 <h2>Tomorrow</h2>
                 <label class="container-checkbox">
-                    <p>Get the documents from home</p>
+                    <p>Get the documents from home
+                        <span>
+                     <img
+                         src="https://img.icons8.com/material/24/AD294B/tear-off-calendar.png">
+                    <p>yesterday at
+                        12:00</p>
+                    </span>
+                    </p>
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
