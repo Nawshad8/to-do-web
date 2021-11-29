@@ -26,7 +26,7 @@
 
         }
 
-/*------SIDE BAR--------------------------------------------*/
+        /*------SIDE BAR--------------------------------------------*/
         .side-bar {
             flex-grow: 0.2;
             background-color: #0A0F38;
@@ -98,7 +98,7 @@
             margin-left: 40px;
         }
 
-/*------MAIN-PAGE-------------------------------------------*/
+        /*------MAIN-PAGE-------------------------------------------*/
         .main-page {
             flex-grow: 3;
             background-color: #050A2E;
@@ -134,6 +134,7 @@
             position: relative;
             padding-left: 27px;
             margin-bottom: 12px;
+            
 
             cursor: pointer;
             font-size: 22px;
@@ -189,6 +190,7 @@
         label:hover {
             background-color: rgb(99, 29, 62, 0.5);
             transition: 0.5s;
+
         }
 
 
@@ -225,12 +227,25 @@
         }
 
         .delay-p {
-
+            display: flex;
         }
 
         .delay-span {
             padding-left: 3.22px;
             color: #AD294B;
+
+        }
+
+        .delay-span img {
+
+            background-color: transparent;
+        }
+
+        .delay-span2 {
+            padding-left: 4.22px;
+            color: #AD294B;
+            font-weight: 3600;
+
         }
 
     </style>
@@ -292,12 +307,14 @@
                         Get the documents from home
                         <span class="delay-span">
                             <img src="https://img.icons8.com/material/24/AD294B/read--v2.png">
-                            yesterday at 12:00
-                        </span> 
-                    </p>
-                    
 
-                    
+                        </span>
+                        <span class="delay-span2">
+                            yesterday at 12:00
+                        </span>
+                    </p>
+
+
                     <input type="checkbox">
                     <span class="checkmark"></span>
                 </label>
@@ -312,6 +329,6 @@
             </div>
         </div>
     </div>
-
+</div>
 </body>
 </html>
